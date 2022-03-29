@@ -13,13 +13,13 @@ public class Main {
             String answer = scanner.nextLine();
             String pause;
             if (answer.equals("1")){
-                car.gas(1);
+                car.gas();
                 System.out.println("You go faster");
                 System.out.println("Press Enter to continue");
                 pause = scanner.nextLine();
             }
             else if (answer.equals("2")){
-                car.stop(1);
+                car.stop();
                 System.out.println("You stopped the car");
                 System.out.println("Press Enter to continue");
                 pause = scanner.nextLine();

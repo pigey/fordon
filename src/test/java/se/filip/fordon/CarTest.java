@@ -18,10 +18,9 @@ class CarTest {
 
     @Test
     void gas() {
-        boolean gas = car.gas(1);
+        boolean gas = car.gas();
         Assertions.assertTrue(gas);
-        boolean noGas = car.gas(0);
-        Assertions.assertFalse(noGas);
+
     }
 
 
@@ -37,10 +36,8 @@ class CarTest {
 
     @Test
     void stop() {
-        boolean brake = car.stop(1);
+        boolean brake = car.stop();
         Assertions.assertTrue(brake);
-        boolean noBrake = car.stop(0);
-        Assertions.assertFalse(noBrake);
 
     }
 
@@ -59,7 +56,7 @@ class CarTest {
 
     @Test
     void speed() {
-        car.gas(1);
+        car.gas();
         Assertions.assertEquals(10,car.speed());
     }
 }

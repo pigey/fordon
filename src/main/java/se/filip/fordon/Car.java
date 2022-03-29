@@ -6,14 +6,9 @@ public class Car {
     private String turn = "";
 
 
-    public boolean gas(int a){
-        if(a == 1){
+    public boolean gas(){
             this.kmh += 10;
             return true;
-        }
-        else{
-            return false;
-        }
     }
 
 
@@ -30,12 +25,9 @@ public class Car {
         }
     }
 
-    public boolean stop(int a){
-        if (a == 1){
+    public boolean stop(){
             this.kmh = 0;
             return true;
-        }
-        return false;
     }
     public String direction(){
         this.direction = direction;
