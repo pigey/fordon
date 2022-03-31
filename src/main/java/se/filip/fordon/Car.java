@@ -47,7 +47,9 @@ public class Car {
         }
         return direction;
     }
+
     public int speed(){
         return this.kmh;
     }
+
 }

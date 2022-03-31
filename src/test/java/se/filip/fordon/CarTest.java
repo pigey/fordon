@@ -58,5 +58,7 @@ class CarTest {
     void speed() {
         car.gas();
         Assertions.assertEquals(10,car.speed());
+        car.gas();
+        Assertions.assertNotEquals(10,car.speed());
     }
 }
