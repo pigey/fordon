@@ -19,9 +19,16 @@ public class Main {
                 pause = scanner.nextLine();
             }
             else if (answer.equals("2")){
+                if (car.stop()){
+                    System.out.println("You stopped the car");
+                    System.out.println("Press Enter to continue");
+                }
+                else{
+                    System.out.println("The car is already parked");
+                    System.out.println("Press Enter to continue");
+                }
                 car.stop();
-                System.out.println("You stopped the car");
-                System.out.println("Press Enter to continue");
+
                 pause = scanner.nextLine();
             }
             else if (answer.equals("3")){

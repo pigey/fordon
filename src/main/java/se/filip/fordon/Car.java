@@ -4,9 +4,11 @@ public class Car {
     private int kmh = 0;
     private String direction = "north";
     private String turn = "";
+    private String moving = "stoped";
 
 
     public boolean gas(){
+            this.moving = "going";
             this.kmh += 10;
             return true;
     }
@@ -26,6 +28,11 @@ public class Car {
     }
 
     public boolean stop(){
+        this.moving = moving;
+        if (moving.equals("stoped")){
+            return false;
+        }
+            moving ="stoped";
             this.kmh = 0;
             return true;
     }

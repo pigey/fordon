@@ -36,8 +36,9 @@ class CarTest {
 
     @Test
     void stop() {
-        boolean brake = car.stop();
-        Assertions.assertTrue(brake);
+        Assertions.assertTrue(car.stop());
+        car.gas();
+        Assertions.assertTrue(car.stop());
 
     }
 
